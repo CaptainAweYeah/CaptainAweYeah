@@ -15,7 +15,7 @@ header
     background-color: rgba(75, 75, 117, 0.859);
     padding: 1%;
     margin:1%;
-    margin-bottom: 13%;
+    margin-bottom: 17%;
     box-shadow: 10px 10px 5px rgb(63, 157, 99);
     font-family: 'Poppins', sans-serif;                                        
     color: rgb(201, 201, 201);
@@ -130,7 +130,7 @@ footer
     left: 0;
     color: rgb(255, 255, 255);
     width: 100%;
-    height:7%;
+    height:10%;
     background-color: rgb(75, 75, 117);
     font-family: 'Poppins', sans-serif;
     font-size:x-large;
