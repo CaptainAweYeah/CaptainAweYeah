@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WillardSoftware</title>
+        <link rel="stylesheet" href="site.css" />
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/poppins');
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>
+                WillardSoftware
+                <h2>
+                    Web solutions you can rely on.
+                </h2>
+            </h1>
+        </header>
+
+        <div class="main">
+            <p>
+                Whether you're running a business or managing your image, We've got a solution that will fit your needs
+            </p>
+            <div class="buttonBox">
+                <button id="Simple" class="optSwitch">
+                        Simple
+                </button>
+                <button id="WebApps" class="optSwitch">
+                    WebApps
+                </button>
+                <button id="Software" class="optSwitch">
+                    Software
+                </button>
+            </div>
+            <div class="content">
+                <p class="content1" id="content1">
+                    Sometimes less is more! Simply supply the design and let us handle the logic.
+                    
+                    <img class="pics" src="media/image.png" alt="logic"/>
+                    Don't have a design in mind? Don't sweat it!
+                    For a small fee we can connect to find exactly what your image needs!
+                </p>
+                <p class="content2" id="content2">
+                    Sometimes even with a great idea, having the means to execute it is the hardest part.
+                    Let us handle the nuts and bolts while you make all of the exectutive decistions!
+                    <img class="pics2" src="media/Microsoft_.NET_logo.svg.png" alt="dotnet logo"/><img class="pics2Round" src="media/react-icon-512x512-u6e60ayf.png" alt="react logo"/>
+                </p>
+                <p class="content3" id="content3">
+                    Looking for something more complex? We have desktop native solutions to fit a variety of needs!
+                    <img class="pics2" src="media/Windows_logo_-_2021.svg.png" alt="Windows_logo"/><img class="pics2" src="media/linux-logo-png_seeklogo-482333.png" alt="linux logo"/>
+                </p>
+            </div>
+            <footer>
+                AshmoreWillard@gmail.com
+            </footer>
+        </div>
+
+        
+
+        <script>
+            
+            
+            const opt1 = document.getElementById("Simple");
+            const opt2 = document.getElementById("WebApps");
+            const opt3 = document.getElementById("Software");
+            const cont1 = document.getElementById("content1");
+            const cont2 = document.getElementById("content2");
+            const cont3 = document.getElementById("content3");
+            
+            opt1.addEventListener("click", function(){
+                cont1.style.display = "block";
+                cont2.style.display = "none";
+                cont3.style.display = "none";
+            });
+
+            opt2.addEventListener("click", function(){
+                cont1.style.display = "none";
+                cont2.style.display = "block";
+                cont3.style.display = "none";
+            });
+
+            opt3.addEventListener("click", function(){
+                cont1.style.display = "none";
+                cont2.style.display = "none";
+                cont3.style.display = "block";
+            });
+
+
+
+
+
+        </script>
+    </body>
+</html>
