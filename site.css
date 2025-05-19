@@ -102,6 +102,16 @@ p
     white-space: pre-line;
 }
 
+.content3
+{
+    margin: top 0%;
+    text-align: center;
+    background-color:rgba(63, 157, 99, 0.842);
+    color: white;
+    display: none;
+    white-space: pre-line;
+}
+
 .pics
 {
     margin: 2%;
@@ -124,7 +134,7 @@ p
     box-shadow: 10px 10px 5px rgb(53, 132, 83);
 }
 
-footer
+footer.footForm
 {
     bottom: 0;
     left: 0;
@@ -136,4 +146,26 @@ footer
     font-size:x-large;
     position:fixed;
     text-align: center;
+}
+
+.contact
+{
+    background-color:rgb(75, 75, 117);
+    border: none;
+    margin: none;
+    font-family: 'Poppins', sans-serif;
+    font-size:large;
+    color: rgb(255, 255, 255);
+    width:100%;
+}
+
+.contact:hover
+{
+    cursor: pointer;
+}
+
+.form
+{
+    align-items: center;
+    white-space: pre-line;
 }

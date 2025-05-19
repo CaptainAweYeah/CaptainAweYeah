@@ -52,8 +52,21 @@
                     <img class="pics2" src="media/Windows_logo_-_2021.svg.png" alt="Windows_logo"/><img class="pics2" src="media/linux-logo-png_seeklogo-482333.png" alt="linux logo"/>
                 </p>
             </div>
-            <footer>
-                AshmoreWillard@gmail.com
+            <footer id="footForm" class="footForm">
+                <button id="contact" class="contact">
+                    Contact us today! (click me!)
+                </button>
+                <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b5f6e1e1-40e5-40a2-bf31-ead136c6e9e5">
+                    Name or Company Name
+                    <input type="text" name="name" required>
+                    Email address
+                    <input type="email" name="email" required>
+                    Message
+                    <textarea name="message" required></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button class="optSwitch" type="submit">Submit Form</button>
+                </form>
             </footer>
         </div>
 
@@ -61,26 +74,45 @@
             const opt1 = document.getElementById("Simple");
             const opt2 = document.getElementById("WebApps");
             const opt3 = document.getElementById("Software");
+            const contact = document.getElementById("contact");
+
             const cont1 = document.getElementById("content1");
             const cont2 = document.getElementById("content2");
             const cont3 = document.getElementById("content3");
+            const foot = document.getElementById("footForm");
+
             
             opt1.addEventListener("click", function(){
                 cont1.style.display = "block";
                 cont2.style.display = "none";
                 cont3.style.display = "none";
+                foot.style.height = "7%";
             });
 
             opt2.addEventListener("click", function(){
                 cont1.style.display = "none";
                 cont2.style.display = "block";
                 cont3.style.display = "none";
+                foot.style.height = "7%";
             });
 
             opt3.addEventListener("click", function(){
                 cont1.style.display = "none";
                 cont2.style.display = "none";
                 cont3.style.display = "block";
+                foot.style.height = "7%";
+            });
+            contact.addEventListener("click", function(){
+                cont1.style.display = "none";
+                cont2.style.display = "none";
+                cont3.style.display = "none";
+                if (foot.style.height === "7%"){
+                    foot.style.height = "100%";
+                }
+                else {
+                    foot.style.height = "7%"
+                }
+                
             });
         </script>
     </body>
